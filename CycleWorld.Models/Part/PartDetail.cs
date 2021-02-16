@@ -10,8 +10,13 @@ namespace CycleParts.Models
     public class PartDetail
     {
         public int PartId { get; set; }
-        public string Title { get; set; }
-        public string Content { get; set; }
+        public string PartName { get; set; }
+        public string ModelNumber { get; set; }
+
+        public string Manufacturer { get; set; }
+
+        public string PartType { get; set; }
+
 
         [Display(Name = "Created")]
         public DateTimeOffset CreatedUtc { get; set; }

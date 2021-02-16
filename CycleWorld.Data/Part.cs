@@ -9,16 +9,40 @@ using System.Threading.Tasks;
 
 namespace CycleParts.Data
 {
+    public enum PartType
+    {
+        Engine = 1,
+        Frame,
+        tank,
+        Exhuast,
+        DriveTrain,
+        Fork,
+        Seat
+    }
     public class Part
     {
         [Key]
         public int PartId { get; set; }
+
         [Required]
         public Guid OwnerId { get; set; }
 
         [Required]
-        public string Title { get; set; }
+        public string PartName { get; set; }
 
+        [Required]
+        public string ModelNumber { get; set; }
+
+        [Required]
+        public string Manufacturer { get; set; }
+
+        [Required]
+        public PartType TypeofPart { get; set; }
+
+        [Required]
+        public DateTimeOffset CreatedUtc { get; set; }
+
+        public DateTimeOffset? ModifiedUtc { get; set; }
     }
 }
 

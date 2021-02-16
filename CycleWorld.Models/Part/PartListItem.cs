@@ -10,7 +10,9 @@ namespace CycleParts.Models
     public class PartListItem
     {
         public int PartId { get; set; }
-        public string Title { get; set; }
+        public string PartName { get; set; }
+        public string  Manufacturer { get; set; }
+        public string ModelNumber { get; set; }
 
         [Display(Name = "Created")]
         public DateTimeOffset CreatedUtc { get; set; }

@@ -23,8 +23,8 @@ namespace CycleShops.Services
                 new Shop()
                 {
                     OwnerId = _userId,
-                    Title = model.Title,
-                    Content = model.Content,
+                    ShopName = model.ShopName,
+                    Services = model.Services,
                     CreatedUtc = DateTimeOffset.Now,
                     PartId = model.PartId
                 };
@@ -48,7 +48,9 @@ namespace CycleShops.Services
                                 new ShopListItem
                                 {
                                     ShopId = e.ShopId,
-                                    Title = e.Title,
+                                    ShopName = e.ShopName,
+                                    Services = e.Services,
+                                    Location = e.Location,
                                     CreatedUtc = e.CreatedUtc
                                 }
                         );
@@ -68,8 +70,9 @@ namespace CycleShops.Services
                     new ShopDetail
                     {
                         ShopId = entity.ShopId,
-                        Title = entity.Title,
-                        Content = entity.Content,
+                        ShopName = entity.ShopName,
+                        Services = entity.Services,
+                        Location = entity.Location,
                         CreatedUtc = entity.CreatedUtc,
                         ModifiedUtc = entity.ModifiedUtc
                     };
@@ -84,8 +87,9 @@ namespace CycleShops.Services
                         .Shops
                         .Single(e => e.ShopId == model.ShopId && e.OwnerId == _userId);
 
-                entity.Title = model.Title;
-                entity.Content = model.Content;
+                entity.ShopName = model.ShopName;
+                entity.Services = model.Services;
+                entity.Location = model.Location;
                 entity.ModifiedUtc = DateTimeOffset.UtcNow;
 
                 return ctx.SaveChanges() == 1;

@@ -8,7 +8,9 @@ namespace CycleWorld.Models.User
 {
     public class UserEdit
     {
-
+        public int UserId { get; set; }
+        public string Name { get; set; }
+        public string Bio { get; set; }
 
     }
 }

@@ -10,8 +10,11 @@ namespace CycleWorld.Data
 {
     public class User
     {
+
         [Key]
         public int UserId { get; set; }
+        [Required]
+        public Guid PersonalId { get; set; }
         [Required]
         public string Name { get; set; }
         public string Bio { get; set; }
@@ -20,5 +23,9 @@ namespace CycleWorld.Data
         [ForeignKey(nameof(ShopId))]
         public int ShopId { get; set; }
 
+        [Required]
+        public DateTimeOffset CreatedUtc { get; set; }
+
+        public DateTimeOffset? ModifiedUtc { get; set; }
     }
 }

@@ -109,3 +109,4 @@ C:\Users\billy\Desktop\ElevenFiftyProjects\BlueBadge\CycleworldBluebadge_Project
 C:\Users\billy\Desktop\ElevenFiftyProjects\BlueBadge\CycleworldBluebadge_Project\CycleWorld\CycleWorld.Data\obj\Debug\CycleWorld.Data.csproj.CopyComplete
 C:\Users\billy\Desktop\ElevenFiftyProjects\BlueBadge\CycleworldBluebadge_Project\CycleWorld\CycleWorld.Data\obj\Debug\CycleWorld.Data.dll
 C:\Users\billy\Desktop\ElevenFiftyProjects\BlueBadge\CycleworldBluebadge_Project\CycleWorld\CycleWorld.Data\obj\Debug\CycleWorld.Data.pdb
+C:\Users\billy\Desktop\ElevenFiftyProjects\BlueBadge\CycleworldBluebadge_Project\CycleWorld\CycleWorld.Data\obj\Debug\CycleWorld.Data.Migrations.update1.resources

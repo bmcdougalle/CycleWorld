@@ -64,3 +64,25 @@ C:\Users\billy\Desktop\ElevenFiftyProjects\BlueBadge\CycleworldBluebadge_Project
 C:\Users\billy\Desktop\ElevenFiftyProjects\BlueBadge\CycleworldBluebadge_Project\CycleWorld\CycleWorld.Services\obj\Debug\CycleWorld.Services.csproj.CopyComplete
 C:\Users\billy\Desktop\ElevenFiftyProjects\BlueBadge\CycleworldBluebadge_Project\CycleWorld\CycleWorld.Services\obj\Debug\CycleWorld.Services.dll
 C:\Users\billy\Desktop\ElevenFiftyProjects\BlueBadge\CycleworldBluebadge_Project\CycleWorld\CycleWorld.Services\obj\Debug\CycleWorld.Services.pdb
+C:\Users\jaker\Desktop\Eleven Fifty Projects\Blue Badge GP\CycleWorld\CycleWorld.Services\bin\Debug\CycleWorld.Services.dll.config
+C:\Users\jaker\Desktop\Eleven Fifty Projects\Blue Badge GP\CycleWorld\CycleWorld.Services\bin\Debug\CycleWorld.Services.dll
+C:\Users\jaker\Desktop\Eleven Fifty Projects\Blue Badge GP\CycleWorld\CycleWorld.Services\bin\Debug\CycleWorld.Services.pdb
+C:\Users\jaker\Desktop\Eleven Fifty Projects\Blue Badge GP\CycleWorld\CycleWorld.Services\bin\Debug\CycleWorld.Data.dll
+C:\Users\jaker\Desktop\Eleven Fifty Projects\Blue Badge GP\CycleWorld\CycleWorld.Services\bin\Debug\CycleWorld.Models.dll
+C:\Users\jaker\Desktop\Eleven Fifty Projects\Blue Badge GP\CycleWorld\CycleWorld.Services\bin\Debug\EntityFramework.dll
+C:\Users\jaker\Desktop\Eleven Fifty Projects\Blue Badge GP\CycleWorld\CycleWorld.Services\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jaker\Desktop\Eleven Fifty Projects\Blue Badge GP\CycleWorld\CycleWorld.Services\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\jaker\Desktop\Eleven Fifty Projects\Blue Badge GP\CycleWorld\CycleWorld.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\jaker\Desktop\Eleven Fifty Projects\Blue Badge GP\CycleWorld\CycleWorld.Services\bin\Debug\CycleWorld.Data.pdb
+C:\Users\jaker\Desktop\Eleven Fifty Projects\Blue Badge GP\CycleWorld\CycleWorld.Services\bin\Debug\CycleWorld.Data.dll.config
+C:\Users\jaker\Desktop\Eleven Fifty Projects\Blue Badge GP\CycleWorld\CycleWorld.Services\bin\Debug\CycleWorld.Models.pdb
+C:\Users\jaker\Desktop\Eleven Fifty Projects\Blue Badge GP\CycleWorld\CycleWorld.Services\bin\Debug\CycleWorld.Models.dll.config
+C:\Users\jaker\Desktop\Eleven Fifty Projects\Blue Badge GP\CycleWorld\CycleWorld.Services\bin\Debug\EntityFramework.xml
+C:\Users\jaker\Desktop\Eleven Fifty Projects\Blue Badge GP\CycleWorld\CycleWorld.Services\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jaker\Desktop\Eleven Fifty Projects\Blue Badge GP\CycleWorld\CycleWorld.Services\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\jaker\Desktop\Eleven Fifty Projects\Blue Badge GP\CycleWorld\CycleWorld.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\jaker\Desktop\Eleven Fifty Projects\Blue Badge GP\CycleWorld\CycleWorld.Services\obj\Debug\CycleWorld.Services.csprojAssemblyReference.cache
+C:\Users\jaker\Desktop\Eleven Fifty Projects\Blue Badge GP\CycleWorld\CycleWorld.Services\obj\Debug\CycleWorld.Services.csproj.CoreCompileInputs.cache
+C:\Users\jaker\Desktop\Eleven Fifty Projects\Blue Badge GP\CycleWorld\CycleWorld.Services\obj\Debug\CycleWorld.Services.csproj.CopyComplete
+C:\Users\jaker\Desktop\Eleven Fifty Projects\Blue Badge GP\CycleWorld\CycleWorld.Services\obj\Debug\CycleWorld.Services.dll
+C:\Users\jaker\Desktop\Eleven Fifty Projects\Blue Badge GP\CycleWorld\CycleWorld.Services\obj\Debug\CycleWorld.Services.pdb

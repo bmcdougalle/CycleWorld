@@ -48,7 +48,8 @@ namespace CycleParts.Models
                                     PartId = e.PartId,
                                     PartName = e.PartName,
                                     Manufacturer = e.Manufacturer,
-                                    ModelNumber = e.ModelNumber
+                                    ModelNumber = e.ModelNumber,
+                                    
                                 }
                         );
 
@@ -85,6 +86,7 @@ namespace CycleParts.Models
                 entity.Manufacturer = model.PartName;
                 entity.ModelNumber = model.ModelNumber;
                 entity.PartName = model.PartName;
+                entity.TypeofPart = model.TypeOfPart;
 
 
                 return ctx.SaveChanges() == 1;

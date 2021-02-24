@@ -5,16 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CycleShops.Models
+namespace CycleWorld.Models.User
 {
-    public class ShopListItem
+    public class UserListItem
     {
-        public int ShopId { get; set; }
-        public string ShopName { get; set; }
-        public string Services { get; set; }
-        public string Location { get; set; }
+        public int UserId { get; set; }
+        public string Name { get; set; }
 
         [Display(Name = "Created")]
         public DateTimeOffset CreatedUtc { get; set; }
+
     }
 }

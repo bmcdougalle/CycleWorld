@@ -25,6 +25,7 @@ namespace CycleShops.Services
                     OwnerId = _userId,
                     ShopName = model.ShopName,
                     Services = model.Services,
+                    Location = model.Location,
                     CreatedUtc = DateTimeOffset.Now,
                     PartId = model.PartId
                 };

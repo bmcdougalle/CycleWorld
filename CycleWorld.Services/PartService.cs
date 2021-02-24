@@ -86,7 +86,7 @@ namespace CycleParts.Models
                 entity.Manufacturer = model.PartName;
                 entity.ModelNumber = model.ModelNumber;
                 entity.PartName = model.PartName;
-                entity.TypeofPart = model.TypeOfPart;
+                //entity.TypeofPart = model.TypeOfPart;
 
 
                 return ctx.SaveChanges() == 1;

@@ -21,7 +21,10 @@ namespace CycleParts.Models
             var entity =
                 new Part()
                 {
-                    Title = model.Title,
+                    Manufacturer = model.Manufacturer,
+                    PartName = model.PartName,
+                    ModelNumber = model.ModelNumber,
+                    TypeofPart = (Data.PartType)model.TypeOfPart
                 };
 
             using (var ctx = new ApplicationDbContext())
@@ -43,7 +46,9 @@ namespace CycleParts.Models
                                 new PartListItem
                                 {
                                     PartId = e.PartId,
-                                    Title = e.Title,
+                                    PartName = e.PartName,
+                                    Manufacturer = e.Manufacturer,
+                                    ModelNumber = e.ModelNumber
                                 }
                         );
 
@@ -62,7 +67,9 @@ namespace CycleParts.Models
                     new PartDetail
                     {
                         PartId = entity.PartId,
-                        Title = entity.Title,
+                        PartName = entity.PartName,
+                        Manufacturer = entity.Manufacturer,
+                        ModelNumber = entity.ModelNumber
                     };
             }
         }
@@ -75,7 +82,10 @@ namespace CycleParts.Models
                         .Parts
                         .Single(e => e.PartId == model.PartId && e.OwnerId == _userId);
 
-                entity.Title = model.Title;
+                entity.Manufacturer = model.PartName;
+                entity.ModelNumber = model.ModelNumber;
+                entity.PartName = model.PartName;
+
 
                 return ctx.SaveChanges() == 1;
             }

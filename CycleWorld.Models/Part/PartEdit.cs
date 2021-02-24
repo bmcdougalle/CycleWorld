@@ -9,7 +9,8 @@ namespace CycleParts.Models
     public class PartEdit
     {
         public int PartId { get; set; }
-        public string Title { get; set; }
-        public string Content { get; set; }
+        public string PartName { get; set; }
+        public string ModelNumber { get; set; }
+        public string Manufacturer { get; set; }
     }
 }

@@ -22,10 +22,12 @@ namespace CycleShops.Data
         public Guid OwnerId { get; set; }
 
         [Required]
-        public string Title { get; set; }
+        public string ShopName { get; set; }
 
         [Required]
-        public string Content { get; set; }
+        public string Services { get; set; }
+
+        public string Location { get; set; }
 
         [Required]
         public DateTimeOffset CreatedUtc { get; set; }

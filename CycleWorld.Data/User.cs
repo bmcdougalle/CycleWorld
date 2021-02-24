@@ -18,7 +18,8 @@ namespace CycleWorld.Data
         [Required]
         public string Name { get; set; }
         public string Bio { get; set; }
-        public List<Bike> ListOfBikes { get; set; }
+
+        // public List<Bike> ListOfBikes { get; set; }
 
         [ForeignKey(nameof(ShopId))]
         public int ShopId { get; set; }

@@ -89,8 +89,12 @@ namespace CycleParts.Models
                 entity.Manufacturer = model.PartName;
                 entity.ModelNumber = model.ModelNumber;
                 entity.PartName = model.PartName;
+ davis0223
                 //entity.TypeofPart = model.TypeOfPart;
-                entity.ModifiedUtc = DateTimeOffset.UtcNow;
+                entity.ModifiedUtc = DateTimeOffset.UtcNow
+                entity.TypeofPart = model.TypeOfPart;
+
+ Develop
 
                 return ctx.SaveChanges() == 1;
             }

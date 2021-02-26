@@ -50,9 +50,7 @@ namespace CycleShops.Services
                                 {
                                     ShopId = e.ShopId,
                                     ShopName = e.ShopName,
-                                    Services = e.Services,
                                     Location = e.Location,
-                                    CreatedUtc = e.CreatedUtc
                                 }
                         );
 

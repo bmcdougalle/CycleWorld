@@ -102,6 +102,5 @@ namespace CycleWorld.Services
                 return ctx.SaveChanges() == 1;
             }
         }
-
     }
 }

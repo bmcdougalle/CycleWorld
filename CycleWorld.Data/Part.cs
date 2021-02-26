@@ -40,6 +40,9 @@ namespace CycleParts.Data
         public PartType TypeofPart { get; set; }
 
         [Required]
+        public string Description { get; set; }
+
+        [Required]
         public DateTimeOffset CreatedUtc { get; set; }
 
         public DateTimeOffset? ModifiedUtc { get; set; }

@@ -10,7 +10,11 @@ namespace CycleWorld.Models.User
     public class UserDetail
     {
         public int UserId { get; set; }
+
+        [Display(Name = "Name of User")]
         public string Name { get; set; }
+
+        [Display(Name = "Biography")]
         public string Bio { get; set; }
 
         [Display(Name = "Created")]

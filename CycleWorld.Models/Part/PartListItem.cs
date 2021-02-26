@@ -14,6 +14,7 @@ namespace CycleParts.Models
         public string  Manufacturer { get; set; }
         public string ModelNumber { get; set; }
 
+
         [Display(Name = "Created")]
         public DateTimeOffset CreatedUtc { get; set; }
     }

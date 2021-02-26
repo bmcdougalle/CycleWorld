@@ -24,7 +24,9 @@ namespace CycleParts.Models
                     Manufacturer = model.Manufacturer,
                     PartName = model.PartName,
                     ModelNumber = model.ModelNumber,
-                    TypeofPart = (Data.PartType)model.TypeOfPart
+                    TypeofPart = (Data.PartType)model.TypeOfPart,
+                    Description = model.Description,
+                    CreatedUtc = DateTimeOffset.Now,
                 };
 
             using (var ctx = new ApplicationDbContext())
@@ -49,7 +51,6 @@ namespace CycleParts.Models
                                     PartName = e.PartName,
                                     Manufacturer = e.Manufacturer,
                                     ModelNumber = e.ModelNumber,
-                                    
                                 }
                         );
 
@@ -70,7 +71,9 @@ namespace CycleParts.Models
                         PartId = entity.PartId,
                         PartName = entity.PartName,
                         Manufacturer = entity.Manufacturer,
-                        ModelNumber = entity.ModelNumber
+                        ModelNumber = entity.ModelNumber,
+                        CreatedUtc = entity.CreatedUtc,
+                        ModifiedUtc = entity.ModifiedUtc
                     };
             }
         }
@@ -87,7 +90,7 @@ namespace CycleParts.Models
                 entity.ModelNumber = model.ModelNumber;
                 entity.PartName = model.PartName;
                 //entity.TypeofPart = model.TypeOfPart;
-
+                entity.ModifiedUtc = DateTimeOffset.UtcNow;
 
                 return ctx.SaveChanges() == 1;
             }

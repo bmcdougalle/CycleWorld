@@ -10,6 +10,8 @@ namespace CycleWorld.Models.User
     public class UserListItem
     {
         public int UserId { get; set; }
+
+        [Display(Name = "Name of User")]
         public string Name { get; set; }
 
         [Display(Name = "Created")]

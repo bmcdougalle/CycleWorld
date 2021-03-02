@@ -72,6 +72,8 @@ namespace CycleParts.Models
                         PartName = entity.PartName,
                         Manufacturer = entity.Manufacturer,
                         ModelNumber = entity.ModelNumber,
+                        TypeOfPart = (PartType)entity.TypeofPart,
+                        Description = entity.Description,
                         CreatedUtc = entity.CreatedUtc,
                         ModifiedUtc = entity.ModifiedUtc
                     };
@@ -86,15 +88,12 @@ namespace CycleParts.Models
                         .Parts
                         .Single(e => e.PartId == model.PartId && e.OwnerId == _userId);
 
-                entity.Manufacturer = model.PartName;
+                entity.Manufacturer = model.Manufacturer;
                 entity.ModelNumber = model.ModelNumber;
                 entity.PartName = model.PartName;
- davis0223
-                //entity.TypeofPart = model.TypeOfPart;
-                entity.ModifiedUtc = DateTimeOffset.UtcNow
-                entity.TypeofPart = model.TypeOfPart;
+                entity.TypeofPart = (Data.PartType)model.TypeOfPart;
 
- Develop
+ 
 
                 return ctx.SaveChanges() == 1;
             }

@@ -21,7 +21,7 @@ namespace CycleParts.Models
         public string ModelNumber { get; set; }
 
         [Display(Name = "Type")]
-        public string PartType { get; set; }
+        public PartType TypeOfPart { get; set; }
 
         [Display(Name = "Description of Part")]
         public string Description { get; set; }

@@ -6,16 +6,6 @@ using System.Threading.Tasks;
 
 namespace CycleParts.Models
 {
-    //public enum NewPartType
-    //{
-    //    Engine = 1,
-    //    Frame,
-    //    tank,
-    //    Exhuast,
-    //    DriveTrain,
-    //    Fork,
-    //    Seat
-    //}
     public class PartEdit
     {
         public int PartId { get; set; }

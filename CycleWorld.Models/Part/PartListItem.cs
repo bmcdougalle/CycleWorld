@@ -19,13 +19,5 @@ namespace CycleParts.Models
 
         [Display(Name = "Model Number")]
         public string ModelNumber { get; set; }
-
- davis0223
-        [Display(Name = "Type")]
-        public string PartType { get; set; 
-
-        [Display(Name = "Created")]
-        public DateTimeOffset CreatedUtc { get; set; }
- Develop
     }
 }

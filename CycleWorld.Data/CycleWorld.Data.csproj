@@ -98,6 +98,10 @@
     <Compile Include="Migrations\202102182326231_update1.Designer.cs">
       <DependentUpon>202102182326231_update1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202103050221071_usertable.cs" />
+    <Compile Include="Migrations\202103050221071_usertable.Designer.cs">
+      <DependentUpon>202103050221071_usertable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Part.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -120,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102182326231_update1.resx">
       <DependentUpon>202102182326231_update1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103050221071_usertable.resx">
+      <DependentUpon>202103050221071_usertable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

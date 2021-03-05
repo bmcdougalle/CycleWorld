@@ -12,5 +12,6 @@ namespace CycleParts.Models
         public string PartName { get; set; }
         public string ModelNumber { get; set; }
         public string Manufacturer { get; set; }
+        public PartType TypeOfPart { get; set; }
     }
 }

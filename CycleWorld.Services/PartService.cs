@@ -24,7 +24,9 @@ namespace CycleParts.Models
                     Manufacturer = model.Manufacturer,
                     PartName = model.PartName,
                     ModelNumber = model.ModelNumber,
-                    TypeofPart = (Data.PartType)model.TypeOfPart
+                    TypeofPart = (Data.PartType)model.TypeOfPart,
+                    Description = model.Description,
+                    CreatedUtc = DateTimeOffset.Now,
                 };
 
             using (var ctx = new ApplicationDbContext())
@@ -48,7 +50,7 @@ namespace CycleParts.Models
                                     PartId = e.PartId,
                                     PartName = e.PartName,
                                     Manufacturer = e.Manufacturer,
-                                    ModelNumber = e.ModelNumber
+                                    ModelNumber = e.ModelNumber,
                                 }
                         );
 
@@ -69,7 +71,11 @@ namespace CycleParts.Models
                         PartId = entity.PartId,
                         PartName = entity.PartName,
                         Manufacturer = entity.Manufacturer,
-                        ModelNumber = entity.ModelNumber
+                        ModelNumber = entity.ModelNumber,
+                        TypeOfPart = (PartType)entity.TypeofPart,
+                        Description = entity.Description,
+                        CreatedUtc = entity.CreatedUtc,
+                        ModifiedUtc = entity.ModifiedUtc
                     };
             }
         }
@@ -82,10 +88,12 @@ namespace CycleParts.Models
                         .Parts
                         .Single(e => e.PartId == model.PartId && e.OwnerId == _userId);
 
-                entity.Manufacturer = model.PartName;
+                entity.Manufacturer = model.Manufacturer;
                 entity.ModelNumber = model.ModelNumber;
                 entity.PartName = model.PartName;
+                entity.TypeofPart = (Data.PartType)model.TypeOfPart;
 
+ 
 
                 return ctx.SaveChanges() == 1;
             }

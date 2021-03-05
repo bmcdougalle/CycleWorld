@@ -10,11 +10,11 @@ namespace CycleShops.Models
     public class ShopListItem
     {
         public int ShopId { get; set; }
-        public string ShopName { get; set; }
-        public string Services { get; set; }
-        public string Location { get; set; }
 
-        [Display(Name = "Created")]
-        public DateTimeOffset CreatedUtc { get; set; }
+        [Display(Name = "Name of Shop")]
+        public string ShopName { get; set; }
+
+        [Display(Name = "Location")]
+        public string Location { get; set; }
     }
 }

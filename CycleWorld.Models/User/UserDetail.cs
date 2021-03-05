@@ -5,25 +5,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CycleShops.Models
+namespace CycleWorld.Models.User
 {
-    public class ShopDetail
+    public class UserDetail
     {
-        public int ShopId { get; set; }
+        public int UserId { get; set; }
 
-        [Display(Name = "Name of Shop")]
-        public string ShopName { get; set; }
+        [Display(Name = "Name of User")]
+        public string Name { get; set; }
 
-        [Display(Name = "Available Services")]
-        public string Services { get; set; }
-
-        [Display(Name = "Location")]
-        public string Location { get; set; }
+        [Display(Name = "Biography")]
+        public string Bio { get; set; }
 
         [Display(Name = "Created")]
         public DateTimeOffset CreatedUtc { get; set; }
 
         [Display(Name = "Modified")]
         public DateTimeOffset? ModifiedUtc { get; set; }
+
     }
 }

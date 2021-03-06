@@ -39,5 +39,8 @@ namespace CycleParts.Models
 
         [Display(Name = "Description of Part")]
         public string Description { get; set; }
+
+        [Display(Name = "Number in Inventory")]
+        public int NumberInInventory { get; set; }
     }
 }

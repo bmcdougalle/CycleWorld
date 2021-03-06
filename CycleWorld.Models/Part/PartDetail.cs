@@ -31,6 +31,9 @@ namespace CycleParts.Models
 
         [Display(Name = "Modified")]
         public DateTimeOffset? ModifiedUtc { get; set; }
+
+        [Display(Name = "Number in Inventory")]
+        public int NumberInInventory { get; set; }
     }
 }
 

@@ -22,10 +22,9 @@ namespace CycleWorld.Data
 
         // public List<Bike> ListOfBikes { get; set; }
 
-
         [ForeignKey(nameof(Shop))]
         public int ShopId { get; set; }
-        public virtual Shop Shop {get; set;}
+        public virtual Shop Shop { get; set; }
 
         [Required]
         public DateTimeOffset CreatedUtc { get; set; }

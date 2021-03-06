@@ -20,6 +20,6 @@ namespace CycleWorld.Models.User
         [Display(Name = "Biography")]
         public string Bio { get; set; }
 
-        public int ShopId { get; set; }
+        //public int ShopId { get; set; }
     }
 }

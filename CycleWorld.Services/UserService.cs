@@ -23,7 +23,7 @@ namespace CycleWorld.Services
                 {
                     Name = model.Name,
                     Bio = model.Bio,
-                    ShopId = model.ShopId,
+                    //ShopId = model.ShopId,
                     CreatedUtc = DateTimeOffset.Now,
                 };
 

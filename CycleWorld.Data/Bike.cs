@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CycleWorld.Data
+namespace Cycle.Data
 {
     public class Bike
     {

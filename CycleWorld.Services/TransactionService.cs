@@ -1,12 +1,13 @@
-﻿using CycleWorld.Data;
-using CycleWorld.Models.Transaction;
+﻿using CycleTransaction.Models;
+using CycleTransactions.Data;
+using CycleWorld.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CycleWorld.Services
+namespace CycleTransactions.Services
 {
     class TransactionService
     {

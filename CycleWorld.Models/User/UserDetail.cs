@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CycleShops.Models;
+using CycleWorld.Models.Bike;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -22,6 +24,15 @@ namespace CycleWorld.Models
 
         [Display(Name = "Modified")]
         public DateTimeOffset? ModifiedUtc { get; set; }
+
+        
+        public int? BikeId { get; set; }
+        [Display(Name = "Bike(s) Owned")]
+        public virtual BikeListItem Bike { get; set; }
+
+        public int? ShopId { get; set; }
+        [Display(Name = "Local Shop")]
+        public virtual ShopListItem Shop { get; set; }
 
     }
 }

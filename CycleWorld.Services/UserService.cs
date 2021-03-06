@@ -1,5 +1,9 @@
-﻿using CycleWorld.Data;
+
+
+
+using CycleWorld.Data;
 using CycleWorld.Models;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,10 +25,12 @@ namespace CycleWorld.Services
             var entity =
                 new User()
                 {
+                    PersonalId = _userId,
                     Name = model.Name,
                     Bio = model.Bio,
                     ShopId = model.ShopId,
                     CreatedUtc = DateTimeOffset.Now,
+                    BikeId = model.BikeId
                 };
 
             using (var ctx = new ApplicationDbContext())
@@ -33,20 +39,27 @@ namespace CycleWorld.Services
                 return ctx.SaveChanges() == 1;
             }
         }
-        public IEnumerable<UserListItem> GetUser()
+        public IEnumerable<UserListItem> GetUsers()
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var query =
                     ctx
                         .Users
+                        .Where(e => e.PersonalId == _userId)
                         .Select(
                             e =>
                                 new UserListItem
                                 {
                                     UserId = e.UserId,
                                     Name = e.Name,
-                                    CreatedUtc = e.CreatedUtc
+                                    CreatedUtc = e.CreatedUtc,
+                                    ShopId = e.ShopId,
+                                    ShopName = e.Shop.ShopName,
+                                    BikeId = e.BikeId,
+                                    //BikeMake = e.Bike.Make,
+                                    //BikeModel = e.Bike.Model,
+                                    //BikeYear = e.Bike.Year
                                 }
                         );
 
@@ -68,7 +81,16 @@ namespace CycleWorld.Services
                         Name = entity.Name,
                         Bio = entity.Bio,
                         CreatedUtc = entity.CreatedUtc,
-                        ModifiedUtc = entity.ModifiedUtc
+                        ModifiedUtc = entity.ModifiedUtc,
+                        ShopId = entity.ShopId,
+                        Shop = new ShopListItem()
+                        { ShopId = entity.Shop.ShopId, ShopName = entity.Shop.ShopName, Location = entity.Shop.Location},
+                        BikeId = entity.BikeId,
+                        Bike = new BikeListItem() 
+                                   { BikeId = entity.Bike.BikeId,
+                                     Model = entity.Bike.Model,
+                                     Make = entity.Bike.Make,
+                                     Year = entity.Bike.Year}
                     };
             }
         }
@@ -84,6 +106,7 @@ namespace CycleWorld.Services
                 entity.Name = model.Name;
                 entity.Bio = model.Bio;
                 entity.ModifiedUtc = DateTimeOffset.UtcNow;
+                entity.BikeId = model.BikeId;
 
                 return ctx.SaveChanges() == 1;
             }

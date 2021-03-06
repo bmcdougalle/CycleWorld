@@ -1,6 +1,5 @@
 ﻿using CycleWorld.Data;
-using CycleWorld.Models.Bike;
-using CycleWorld.Models.User;
+using CycleWorld.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

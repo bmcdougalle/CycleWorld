@@ -17,10 +17,6 @@ namespace CycleWorld.Data
         [Required]
         public Guid OwnerId { get; set; }
 
-        //[ForeignKey(nameof(User))]
-        //public int UserId { get; set; }
-        //public virtual User User { get; set; }
-
         [ForeignKey(nameof(Part))]
         public int? PartId { get; set; }
         public virtual Part Part { get; set; }

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CycleParts.Models
+namespace CycleWorld.Models
 {
     public class PartListItem
     {
@@ -19,5 +19,8 @@ namespace CycleParts.Models
 
         [Display(Name = "Model Number")]
         public string ModelNumber { get; set; }
+
+        [Display(Name = "Number in Inventory")]
+        public int NumberInInventory { get; set; }
     }
 }

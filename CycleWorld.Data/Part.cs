@@ -1,4 +1,4 @@
-﻿using CycleShops.Data;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CycleParts.Data
+namespace CycleWorld.Data
 {
     public enum PartType
     {
@@ -46,6 +46,18 @@ namespace CycleParts.Data
         public DateTimeOffset CreatedUtc { get; set; }
 
         public DateTimeOffset? ModifiedUtc { get; set; }
+
+        [Required]
+        public int NumberInInventory { get; set; }
+
+        [Required]
+        public bool IsInStock
+        {
+            get
+            {
+                return NumberInInventory > 0;
+            }
+        }
     }
 }
 

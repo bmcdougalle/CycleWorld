@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CycleParts.Models
+namespace CycleWorld.Models
 {
     public class PartDetail
     {
@@ -31,6 +31,9 @@ namespace CycleParts.Models
 
         [Display(Name = "Modified")]
         public DateTimeOffset? ModifiedUtc { get; set; }
+
+        [Display(Name = "Number in Inventory")]
+        public int NumberInInventory { get; set; }
     }
 }
 

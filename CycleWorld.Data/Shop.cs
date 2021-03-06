@@ -1,4 +1,4 @@
-﻿using CycleParts.Data;
+﻿using CycleWorld.Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CycleShops.Data
+namespace CycleWorld.Data
 {
     public class Shop
     {
@@ -15,7 +15,7 @@ namespace CycleShops.Data
         public int ShopId { get; set; }
 
         [ForeignKey(nameof(Part))]
-        public int PartId { get; set; }
+        public int? PartId { get; set; }
         public virtual Part Part { get; set; }
 
         [Required]

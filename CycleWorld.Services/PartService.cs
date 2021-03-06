@@ -1,12 +1,12 @@
-﻿using CycleParts.Data;
-using CycleWorld.Data;
+﻿using CycleWorld.Data;
+using CycleWorld.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CycleParts.Models
+namespace CycleWorld.Services
 {
     public class PartService
     {
@@ -27,6 +27,7 @@ namespace CycleParts.Models
                     TypeofPart = (Data.PartType)model.TypeOfPart,
                     Description = model.Description,
                     CreatedUtc = DateTimeOffset.Now,
+                    NumberInInventory = model.NumberInInventory
                 };
 
             using (var ctx = new ApplicationDbContext())
@@ -72,7 +73,7 @@ namespace CycleParts.Models
                         PartName = entity.PartName,
                         Manufacturer = entity.Manufacturer,
                         ModelNumber = entity.ModelNumber,
-                        TypeOfPart = (PartType)entity.TypeofPart,
+                        TypeOfPart = (Models.PartType)entity.TypeofPart,
                         Description = entity.Description,
                         CreatedUtc = entity.CreatedUtc,
                         ModifiedUtc = entity.ModifiedUtc

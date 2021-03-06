@@ -46,6 +46,18 @@ namespace CycleParts.Data
         public DateTimeOffset CreatedUtc { get; set; }
 
         public DateTimeOffset? ModifiedUtc { get; set; }
+
+        [Required]
+        public int NumberInInventory { get; set; }
+
+        [Required]
+        public bool IsInStock
+        {
+            get
+            {
+                return NumberInInventory > 0;
+            }
+        }
     }
 }
 

@@ -1,5 +1,4 @@
-﻿using CycleTransactions.Data;
-using CycleWorld.Data;
+﻿using CycleWorld.Data;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;

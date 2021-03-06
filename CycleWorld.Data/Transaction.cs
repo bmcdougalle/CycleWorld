@@ -1,5 +1,4 @@
-﻿using CycleParts.Data;
-using CycleWorld.Data;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -8,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CycleTransactions.Data
+namespace CycleWorld.Data
 {
     public class Transaction
     {
@@ -18,12 +17,12 @@ namespace CycleTransactions.Data
         [Required]
         public Guid OwnerId { get; set; }
 
-        [ForeignKey(nameof(User))]
-        public int UserId { get; set; }
-        public virtual User User { get; set; }
+        //[ForeignKey(nameof(User))]
+        //public int UserId { get; set; }
+        //public virtual User User { get; set; }
 
         [ForeignKey(nameof(Part))]
-        public int PartId { get; set; }
+        public int? PartId { get; set; }
         public virtual Part Part { get; set; }
 
         [Required]

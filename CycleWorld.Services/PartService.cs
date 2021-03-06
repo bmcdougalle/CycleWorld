@@ -1,13 +1,12 @@
-﻿using CycleParts.Data;
-using CycleParts.Models;
-using CycleWorld.Data;
+﻿using CycleWorld.Data;
+using CycleWorld.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CycleParts.Services
+namespace CycleWorld.Services
 {
     public class PartService
     {

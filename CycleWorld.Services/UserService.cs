@@ -1,5 +1,5 @@
 ﻿using CycleWorld.Data;
-using CycleWorld.Models.User;
+using CycleWorld.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,7 +23,7 @@ namespace CycleWorld.Services
                 {
                     Name = model.Name,
                     Bio = model.Bio,
-                    //ShopId = model.ShopId,
+                    ShopId = model.ShopId,
                     CreatedUtc = DateTimeOffset.Now,
                 };
 

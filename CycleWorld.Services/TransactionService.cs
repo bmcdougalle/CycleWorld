@@ -1,5 +1,4 @@
-﻿using CycleTransaction.Models;
-using CycleTransactions.Data;
+﻿using CycleWorld.Models;
 using CycleWorld.Data;
 using System;
 using System.Collections.Generic;
@@ -7,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CycleTransactions.Services
+namespace CycleWorld.Services
 {
     class TransactionService
     {
@@ -45,7 +44,6 @@ namespace CycleTransactions.Services
                                 new TransactionListItem
                                 {
                                     TransactionId = e.TransactionId,
-                                    UserId = e.UserId,
                                     ItemCount = e.ItemCount,
                                     DateOfTransaction = e.DateOfTransaction
                                 }
@@ -66,7 +64,6 @@ namespace CycleTransactions.Services
                     new TransactionDetail
                     {
                         TransactionId = entity.TransactionId,
-                        UserId = entity.UserId,
                         ItemCount = entity.ItemCount,
                         DateOfTransaction = entity.DateOfTransaction
                     };

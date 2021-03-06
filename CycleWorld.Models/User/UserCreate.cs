@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CycleWorld.Models.User
+namespace CycleWorld.Models
 {
     public class UserCreate
     {
@@ -20,6 +20,6 @@ namespace CycleWorld.Models.User
         [Display(Name = "Biography")]
         public string Bio { get; set; }
 
-        //public int ShopId { get; set; }
+        public int ShopId { get; set; }
     }
 }

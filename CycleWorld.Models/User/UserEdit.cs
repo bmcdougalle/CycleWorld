@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CycleWorld.Models.User
+namespace CycleWorld.Models
 {
     public class UserEdit
     {

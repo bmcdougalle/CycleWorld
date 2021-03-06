@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CycleWorld.Models.Transaction
+namespace CycleTransaction.Models
 {
     public class TransactionEdit
     {

@@ -17,5 +17,14 @@ namespace CycleWorld.Models.User
         [Display(Name = "Created")]
         public DateTimeOffset CreatedUtc { get; set; }
 
+        [Display(Name = "Bikes Owned")]
+        public int? BikeId { get; set; }
+        //public string BikeMake { get; set; }
+        //public string BikeModel { get; set; }
+        //public int BikeYear { get; set; }
+
+        public int? ShopId { get; set; }
+        public string ShopName { get; set; }
+
     }
 }

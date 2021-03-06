@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CycleWorld.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -20,6 +21,10 @@ namespace CycleWorld.Models.User
         [Display(Name = "Biography")]
         public string Bio { get; set; }
 
-        //public int ShopId { get; set; }
+        public int? BikeId { get; set; }
+        //public virtual Bike Bike { get; set; }
+
+        public int? ShopId { get; set; }
+        //public virtual Shop Shop { get; set; }
     }
 }

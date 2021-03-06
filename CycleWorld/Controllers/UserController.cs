@@ -16,7 +16,7 @@ namespace CycleWorld.Controllers
         public IHttpActionResult Get()
         {
             UserService userService = CreateUserService();
-            var users = userService.GetUser();
+            var users = userService.GetUsers();
             return Ok(users);
         }
         public IHttpActionResult Post(UserCreate user)
@@ -64,6 +64,6 @@ namespace CycleWorld.Controllers
 
             return Ok();
         }
-
+        
     }
 }

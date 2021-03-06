@@ -102,6 +102,14 @@
     <Compile Include="Migrations\202103030223082_update.Designer.cs">
       <DependentUpon>202103030223082_update.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202103062039424_LukeUpdate.cs" />
+    <Compile Include="Migrations\202103062039424_LukeUpdate.Designer.cs">
+      <DependentUpon>202103062039424_LukeUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103062047188_LukeUpdatedShopRelationship.cs" />
+    <Compile Include="Migrations\202103062047188_LukeUpdatedShopRelationship.Designer.cs">
+      <DependentUpon>202103062047188_LukeUpdatedShopRelationship.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Part.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -127,6 +135,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202103030223082_update.resx">
       <DependentUpon>202103030223082_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103062039424_LukeUpdate.resx">
+      <DependentUpon>202103062039424_LukeUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103062047188_LukeUpdatedShopRelationship.resx">
+      <DependentUpon>202103062047188_LukeUpdatedShopRelationship.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

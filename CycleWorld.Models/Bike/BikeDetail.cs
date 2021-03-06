@@ -5,26 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CycleWorld.Data
+namespace CycleWorld.Models.Bike
 {
-    public class Bike
+    public class BikeDetail
     {
-        [Key]
         public int BikeId { get; set; }
-        [Required]
-        public Guid OwnerId { get; set; }
-        [Required]
         public string Model { get; set; }
-        [Required]
         public string Make { get; set; }
-        [Required]
         public int Year { get; set; }
 
         public decimal? Mileage { get; set; }
-
-        [Required]
+        [Display(Name = "Created")]
         public DateTimeOffset CreatedUtc { get; set; }
-
+        [Display(Name = "Modified")]
         public DateTimeOffset? ModifiedUtc { get; set; }
 
     }

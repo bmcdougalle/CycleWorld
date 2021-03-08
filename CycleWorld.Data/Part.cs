@@ -9,21 +9,11 @@ using System.Threading.Tasks;
 
 namespace CycleWorld.Data
 {
-    public enum PartType
-    {
-        Engine = 1,
-        Frame,
-        tank,
-        Exhuast,
-        DriveTrain,
-        Fork,
-        Seat
-    }
     public class Part
     {
         [Key]
         public int PartId { get; set; }
-
+        
         [Required]
         public Guid OwnerId { get; set; }
 
@@ -37,7 +27,7 @@ namespace CycleWorld.Data
         public string Manufacturer { get; set; }
 
         [Required]
-        public PartType TypeofPart { get; set; }
+        public string TypeofPart { get; set; }
 
         [Required]
         public string Description { get; set; }

@@ -22,7 +22,8 @@ namespace CycleWorld.Models
 
 
         [Display(Name = "Type")]
-        public PartType TypeOfPart { get; set; }
+
+        public string TypeOfPart { get; set; }
 
         [Display(Name = "Number in Inventory")]
         public int NumberInInventory { get; set; }

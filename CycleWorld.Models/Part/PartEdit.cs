@@ -12,7 +12,7 @@ namespace CycleWorld.Models
         public string PartName { get; set; }
         public string ModelNumber { get; set; }
         public string Manufacturer { get; set; }
-        public PartType TypeOfPart { get; set; }
+        public string TypeOfPart { get; set; }
         public int NumberInInventory { get; set; }
     }
 }

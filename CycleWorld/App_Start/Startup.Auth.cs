@@ -9,7 +9,7 @@ using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
 using CycleWorld.Providers;
-using CycleWorld.Models;
+using CycleWorld.Data;
 using CycleWorld.Data;
 
 namespace CycleWorld

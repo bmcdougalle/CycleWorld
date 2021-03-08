@@ -24,7 +24,7 @@ namespace CycleWorld.Services
                     Manufacturer = model.Manufacturer,
                     PartName = model.PartName,
                     ModelNumber = model.ModelNumber,
-                    TypeofPart = (Data.PartType)model.TypeOfPart,
+                    TypeofPart = model.TypeOfPart,
                     Description = model.Description,
                     CreatedUtc = DateTimeOffset.Now,
                     NumberInInventory = model.NumberInInventory
@@ -73,7 +73,7 @@ namespace CycleWorld.Services
                         PartName = entity.PartName,
                         Manufacturer = entity.Manufacturer,
                         ModelNumber = entity.ModelNumber,
-                        TypeOfPart = (Models.PartType)entity.TypeofPart,
+                        TypeOfPart = entity.TypeofPart,
                         Description = entity.Description,
                         CreatedUtc = entity.CreatedUtc,
                         ModifiedUtc = entity.ModifiedUtc
@@ -92,7 +92,7 @@ namespace CycleWorld.Services
                 entity.Manufacturer = model.Manufacturer;
                 entity.ModelNumber = model.ModelNumber;
                 entity.PartName = model.PartName;
-                entity.TypeofPart = (Data.PartType)model.TypeOfPart;
+                entity.TypeofPart = model.TypeOfPart;
 
  
 

@@ -1,4 +1,5 @@
-﻿using CycleWorld.Models;
+﻿using CycleWorld.Data;
+using CycleWorld.Models;
 using CycleWorld.Services;
 using Microsoft.AspNet.Identity;
 using System;

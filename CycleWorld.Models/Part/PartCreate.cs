@@ -7,16 +7,6 @@ using System.Threading.Tasks;
 
 namespace CycleWorld.Models
 {
-    public enum PartType
-    {
-        Engine = 1,
-        Frame,
-        tank,
-        Exhuast,
-        DriveTrain,
-        Fork,
-        Seat
-    }
     public class PartCreate
     {
         [Required]
@@ -33,7 +23,7 @@ namespace CycleWorld.Models
         public string  ModelNumber { get; set; }
 
         [Display(Name = "Type")]
-        public PartType TypeOfPart { get; set; }
+        public string TypeOfPart { get; set; }
 
         [MaxLength(8000)]
 

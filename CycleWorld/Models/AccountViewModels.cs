@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CycleWorld.Models
+namespace CycleWorld.Data
 {
     // Models returned by AccountController actions.
 

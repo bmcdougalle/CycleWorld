@@ -3,7 +3,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
-using CycleWorld.Models;
+using CycleWorld.Data;
 using CycleWorld.Data;
 
 namespace CycleWorld

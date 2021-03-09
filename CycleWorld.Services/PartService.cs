@@ -27,7 +27,8 @@ namespace CycleWorld.Services
                     TypeOfPart = model.TypeOfPart,
                     Description = model.Description,
                     CreatedUtc = DateTimeOffset.Now,
-                    NumberInInventory = model.NumberInInventory
+                    NumberInInventory = model.NumberInInventory,
+                    OwnerId = _userId
                 };
 
             using (var ctx = new ApplicationDbContext())

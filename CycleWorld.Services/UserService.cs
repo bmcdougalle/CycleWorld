@@ -84,13 +84,19 @@ namespace CycleWorld.Services
                         ModifiedUtc = entity.ModifiedUtc,
                         ShopId = entity.ShopId,
                         Shop = new ShopListItem()
-                        { ShopId = entity.Shop.ShopId, ShopName = entity.Shop.ShopName, Location = entity.Shop.Location},
+                        {
+                            ShopId = entity.Shop.ShopId,
+                            ShopName = entity.Shop.ShopName,
+                            Location = entity.Shop.Location
+                        },
                         BikeId = entity.BikeId,
-                        Bike = new BikeListItem() 
-                                   { BikeId = entity.Bike.BikeId,
-                                     Model = entity.Bike.Model,
-                                     Make = entity.Bike.Make,
-                                     Year = entity.Bike.Year}
+                        Bike = new BikeListItem()
+                        {
+                            BikeId = entity.Bike.BikeId,
+                            Model = entity.Bike.Model,
+                            Make = entity.Bike.Make,
+                            Year = entity.Bike.Year
+                        }
                     };
             }
         }
@@ -107,6 +113,7 @@ namespace CycleWorld.Services
                 entity.Bio = model.Bio;
                 entity.ModifiedUtc = DateTimeOffset.UtcNow;
                 entity.BikeId = model.BikeId;
+                entity.ShopId = model.ShopId;
 
                 return ctx.SaveChanges() == 1;
             }

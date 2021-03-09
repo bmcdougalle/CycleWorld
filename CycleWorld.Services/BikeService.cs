@@ -27,6 +27,7 @@ namespace CycleWorld.Services
                     Make = model.Make,
                     Year = model.Year,
                     CreatedUtc = DateTimeOffset.Now,
+                    Mileage = model.Mileage
                 };
 
             using (var ctx = new ApplicationDbContext())

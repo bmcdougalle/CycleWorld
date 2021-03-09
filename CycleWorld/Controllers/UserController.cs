@@ -38,7 +38,7 @@ namespace CycleWorld.Controllers
             var userService = new UserService(userId);
             return userService;
         }
-        public IHttpActionResult Get(int id)
+        public IHttpActionResult GetById(int id)
         {
             UserService userService = CreateUserService();
             var user = userService.GetUserById(id);

@@ -98,6 +98,34 @@
     <Compile Include="Migrations\202102182326231_update1.Designer.cs">
       <DependentUpon>202102182326231_update1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202103030223082_update.cs" />
+    <Compile Include="Migrations\202103030223082_update.Designer.cs">
+      <DependentUpon>202103030223082_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103062125156_update3.cs" />
+    <Compile Include="Migrations\202103062125156_update3.Designer.cs">
+      <DependentUpon>202103062125156_update3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103062141049_updatelukes4.cs" />
+    <Compile Include="Migrations\202103062141049_updatelukes4.Designer.cs">
+      <DependentUpon>202103062141049_updatelukes4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103070512494_update5.cs" />
+    <Compile Include="Migrations\202103070512494_update5.Designer.cs">
+      <DependentUpon>202103070512494_update5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103090151379_update6v1.cs" />
+    <Compile Include="Migrations\202103090151379_update6v1.Designer.cs">
+      <DependentUpon>202103090151379_update6v1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103090152398_update6v2.cs" />
+    <Compile Include="Migrations\202103090152398_update6v2.Designer.cs">
+      <DependentUpon>202103090152398_update6v2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103090400479_update7_remove_transactions.cs" />
+    <Compile Include="Migrations\202103090400479_update7_remove_transactions.Designer.cs">
+      <DependentUpon>202103090400479_update7_remove_transactions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Part.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -120,6 +148,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102182326231_update1.resx">
       <DependentUpon>202102182326231_update1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103030223082_update.resx">
+      <DependentUpon>202103030223082_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103062125156_update3.resx">
+      <DependentUpon>202103062125156_update3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103062141049_updatelukes4.resx">
+      <DependentUpon>202103062141049_updatelukes4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103070512494_update5.resx">
+      <DependentUpon>202103070512494_update5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103090151379_update6v1.resx">
+      <DependentUpon>202103090151379_update6v1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103090152398_update6v2.resx">
+      <DependentUpon>202103090152398_update6v2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103090400479_update7_remove_transactions.resx">
+      <DependentUpon>202103090400479_update7_remove_transactions.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

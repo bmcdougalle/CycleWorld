@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -20,9 +21,13 @@ namespace CycleWorld.Data
         public string Bio { get; set; }
 
         // public List<Bike> ListOfBikes { get; set; }
+        [ForeignKey(nameof(Bike))]
+        public int? BikeId { get; set; }
+        public virtual Bike Bike { get; set; }
 
-        [ForeignKey(nameof(ShopId))]
-        public int ShopId { get; set; }
+        [ForeignKey(nameof(Shop))]
+        public int? ShopId { get; set; }
+        public virtual Shop Shop { get; set; }
 
         [Required]
         public DateTimeOffset CreatedUtc { get; set; }

@@ -54,6 +54,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bike\BikeCreate.cs" />
+    <Compile Include="Bike\BikeDetail.cs" />
+    <Compile Include="Bike\BikeEdit.cs" />
+    <Compile Include="Bike\BikeListItem.cs" />
     <Compile Include="Shop\ShopCreate.cs" />
     <Compile Include="Shop\ShopDetail.cs" />
     <Compile Include="Shop\ShopEdit.cs" />
@@ -71,6 +75,12 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CycleWorld.Data\CycleWorld.Data.csproj">
+      <Project>{56CF0760-6B4B-4B50-9B90-40139016FAE3}</Project>
+      <Name>CycleWorld.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

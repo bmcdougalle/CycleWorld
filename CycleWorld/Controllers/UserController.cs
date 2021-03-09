@@ -1,4 +1,5 @@
-﻿using CycleWorld.Models.User;
+﻿using CycleWorld.Data;
+using CycleWorld.Models;
 using CycleWorld.Services;
 using Microsoft.AspNet.Identity;
 using System;
@@ -16,7 +17,7 @@ namespace CycleWorld.Controllers
         public IHttpActionResult Get()
         {
             UserService userService = CreateUserService();
-            var users = userService.GetUser();
+            var users = userService.GetUsers();
             return Ok(users);
         }
         public IHttpActionResult Post(UserCreate user)
@@ -64,6 +65,6 @@ namespace CycleWorld.Controllers
 
             return Ok();
         }
-
+        
     }
 }

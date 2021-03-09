@@ -1,12 +1,12 @@
-﻿using CycleParts.Data;
-using CycleWorld.Data;
+﻿using CycleWorld.Data;
+using CycleWorld.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CycleParts.Models
+namespace CycleWorld.Services
 {
     public class PartService
     {
@@ -24,7 +24,11 @@ namespace CycleParts.Models
                     Manufacturer = model.Manufacturer,
                     PartName = model.PartName,
                     ModelNumber = model.ModelNumber,
-                    TypeofPart = (Data.PartType)model.TypeOfPart
+                    TypeOfPart = model.TypeOfPart,
+                    Description = model.Description,
+                    CreatedUtc = DateTimeOffset.Now,
+                    NumberInInventory = model.NumberInInventory,
+                    OwnerId = _userId
                 };
 
             using (var ctx = new ApplicationDbContext())
@@ -49,7 +53,6 @@ namespace CycleParts.Models
                                     PartName = e.PartName,
                                     Manufacturer = e.Manufacturer,
                                     ModelNumber = e.ModelNumber,
-                                    
                                 }
                         );
 
@@ -70,7 +73,11 @@ namespace CycleParts.Models
                         PartId = entity.PartId,
                         PartName = entity.PartName,
                         Manufacturer = entity.Manufacturer,
-                        ModelNumber = entity.ModelNumber
+                        ModelNumber = entity.ModelNumber,
+                        TypeOfPart = entity.TypeOfPart,
+                        Description = entity.Description,
+                        CreatedUtc = entity.CreatedUtc,
+                        ModifiedUtc = entity.ModifiedUtc
                     };
             }
         }
@@ -83,11 +90,13 @@ namespace CycleParts.Models
                         .Parts
                         .Single(e => e.PartId == model.PartId && e.OwnerId == _userId);
 
-                entity.Manufacturer = model.PartName;
+                entity.Manufacturer = model.Manufacturer;
                 entity.ModelNumber = model.ModelNumber;
                 entity.PartName = model.PartName;
-                //entity.TypeofPart = model.TypeOfPart;
+                entity.TypeOfPart = model.TypeOfPart;
+                entity.NumberInInventory = model.NumberInInventory;
 
+ 
 
                 return ctx.SaveChanges() == 1;
             }

@@ -1,13 +1,12 @@
-﻿using CycleShops.Data;
-using CycleShops.Models;
-using CycleWorld.Data;
+﻿using CycleWorld.Data;
+using CycleWorld.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CycleShops.Services
+namespace CycleWorld.Services
 {
     public class ShopService
     {
@@ -25,6 +24,7 @@ namespace CycleShops.Services
                     OwnerId = _userId,
                     ShopName = model.ShopName,
                     Services = model.Services,
+                    Location = model.Location,
                     CreatedUtc = DateTimeOffset.Now,
                     PartId = model.PartId
                 };
@@ -49,9 +49,7 @@ namespace CycleShops.Services
                                 {
                                     ShopId = e.ShopId,
                                     ShopName = e.ShopName,
-                                    Services = e.Services,
                                     Location = e.Location,
-                                    CreatedUtc = e.CreatedUtc
                                 }
                         );
 

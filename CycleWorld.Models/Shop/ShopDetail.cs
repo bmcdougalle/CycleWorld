@@ -5,13 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CycleShops.Models
+namespace CycleWorld.Models
 {
     public class ShopDetail
     {
         public int ShopId { get; set; }
+
+        [Display(Name = "Name of Shop")]
         public string ShopName { get; set; }
+
+        [Display(Name = "Available Services")]
         public string Services { get; set; }
+
+        [Display(Name = "Location")]
         public string Location { get; set; }
 
         [Display(Name = "Created")]

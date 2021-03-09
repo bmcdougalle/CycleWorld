@@ -1,5 +1,6 @@
-﻿using CycleShops.Models;
-using CycleShops.Services;
+﻿using CycleWorld.Data;
+using CycleWorld.Models;
+using CycleWorld.Services;
 using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;

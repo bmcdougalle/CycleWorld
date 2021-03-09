@@ -3,16 +3,16 @@ namespace CycleWorld.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class update6 : DbMigration
+    public partial class update6v2 : DbMigration
     {
         public override void Up()
         {
-            AlterColumn("dbo.Part", "TypeofPart", c => c.String(nullable: false));
+            AddColumn("dbo.Part", "TypeOfPart", c => c.String(nullable: false));
         }
         
         public override void Down()
         {
-            AlterColumn("dbo.Part", "TypeofPart", c => c.Int(nullable: false));
+            DropColumn("dbo.Part", "TypeOfPart");
         }
     }
 }

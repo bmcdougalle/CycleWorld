@@ -27,7 +27,7 @@ namespace CycleWorld.Data
         public string Manufacturer { get; set; }
 
         [Required]
-        public string TypeofPart { get; set; }
+        public string TypeOfPart { get; set; }
 
         [Required]
         public string Description { get; set; }

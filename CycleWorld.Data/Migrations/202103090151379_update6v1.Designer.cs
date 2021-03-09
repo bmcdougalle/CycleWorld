@@ -7,13 +7,13 @@ namespace CycleWorld.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.0-30225")]
-    public sealed partial class update6 : IMigrationMetadata
+    public sealed partial class update6v1 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(update6));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(update6v1));
         
         string IMigrationMetadata.Id
         {
-            get { return "202103080242114_update6"; }
+            get { return "202103090151379_update6v1"; }
         }
         
         string IMigrationMetadata.Source

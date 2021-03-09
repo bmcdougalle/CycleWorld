@@ -29,11 +29,6 @@ namespace CycleWorld.Data
         public int? ShopId { get; set; }
         public virtual Shop Shop { get; set; }
 
-
-        [ForeignKey(nameof(Transaction))]
-        public int? TransactionId { get; set; }
-        public virtual Transaction Transaction { get; set; }
-
         [Required]
         public DateTimeOffset CreatedUtc { get; set; }
 

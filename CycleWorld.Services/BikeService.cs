@@ -23,6 +23,7 @@ namespace CycleWorld.Services
                 new Bike()
                 {
                     Model = model.Model,
+                    OwnerId = _ownerId,
                     Make = model.Make,
                     Year = model.Year,
                     CreatedUtc = DateTimeOffset.Now,
@@ -93,7 +94,7 @@ namespace CycleWorld.Services
                 entity.Make = model.Make;
                 entity.Mileage = model.Mileage;
                 entity.Year = model.Year;
-                entity.ModifiedUtc = DateTimeOffset.UtcNow;
+                entity.ModifiedUtc = DateTimeOffset.Now;
 
                 return ctx.SaveChanges() == 1;
             }

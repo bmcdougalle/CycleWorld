@@ -23,6 +23,7 @@ namespace CycleWorld.Services
                 {
                     ItemCount = model.ItemCount,
                     DateOfTransaction = DateTimeOffset.Now,
+                    OwnerId = _userId
                 };
 
             using (var ctx = new ApplicationDbContext())

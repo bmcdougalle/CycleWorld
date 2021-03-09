@@ -48,6 +48,10 @@ namespace CycleWorld.WebAPI.Controllers
             _ = numberInInventory - model.ItemCount;
 
             // Add to the Transaction Entity
+
+            _context.Transactions.Add(transaction);
+            transaction.Part.NumberInInventory -= transaction.ItemCount;
+
             return await _context.SaveChangesAsync() == 1
                 ? Ok($"You successfully purchased {part.PartName}!")
                 : (IHttpActionResult)InternalServerError();

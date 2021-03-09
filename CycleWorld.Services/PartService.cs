@@ -94,6 +94,7 @@ namespace CycleWorld.Services
                 entity.ModelNumber = model.ModelNumber;
                 entity.PartName = model.PartName;
                 entity.TypeOfPart = model.TypeOfPart;
+                entity.NumberInInventory = model.NumberInInventory;
 
  
 
